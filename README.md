@@ -156,14 +156,4 @@ MIT © 2025 - Pokémon e OpenWeather são marcas de seus respectivos detentores.
 
 ```
 
----
 
-Se quiser, posso:
-
-- Criar o `.gitignore`
-- Gerar o `requirements.txt`
-- Gerar o script de init do banco (`database.py`)
-- Subir para um repositório GitHub com o push pronto
-
-Deseja fazer isso em sequência?
-```
