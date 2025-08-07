@@ -1,7 +1,3 @@
-Perfeito, Rafael! Abaixo está o conteúdo completo e profissional para o `README.md` do seu projeto **Pokemon Weather App**, pronto para subir no GitHub.
-
----
-
 ## 📄 `README.md`
 
 ````markdown
