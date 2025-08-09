@@ -153,5 +153,3 @@ Desenvolvedor Full Stack | Engenheiro de Computação
 ## 📝 Licença
 
 MIT © 2025 - Pokémon e OpenWeather são marcas de seus respectivos detentores.
-
-```
