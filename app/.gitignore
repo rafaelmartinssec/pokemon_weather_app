@@ -82,6 +82,16 @@ target/
 profile_default/
 ipython_config.py
 
+# caches locais
+*.sqlite
+app_backup/
+__pycache__/
+*.pyc
+
+# Caches específicos do pokemon_weather_app
+app/ow_cache.sqlite
+app/pokeapi_cache.sqlite
+
 # pyenv
 #   For a library or package, you might want to ignore these files since the code is
 #   intended to run in multiple environments; otherwise, check them in:
