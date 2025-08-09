@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pokémon Weather</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="{{ url_for('static', filename='assets/pokebola.ico') }}" type="image/x-icon">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/stylesheet.css') }}">
+
+  <!-- Responsividade -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="cabecalho">
+    <img class="cabecalho-imagem"
+         src="{{ url_for('static', filename='assets/logo.png') }}"
+         alt="Logo Pokémon">
+    <nav class="cabecalho-menu">
+      <form class="busca" id="form_busca">
+        <input type="search" id="input_cidade" placeholder="Digite a cidade" required>
+        <button type="submit">Buscar</button>
+      </form>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="conteudo">
+
+    <!-- Hero -->
+    <section class="conteudo-principal">
+      <div class="conteudo-principal-escrito">
+        <h1 class="conteudo-principal-escrito-titulo">Desafio Pokémon para Desenvolvedores</h1>
+        <h2 class="conteudo-principal-escrito-subtitulo">
+          Insira uma cidade para exibir o Pokémon de acordo com o clima e a temperatura.
+        </h2>
+      </div>
+      <img class="conteudo-principal-imagem" src="" alt="Imagem do Pokémon" id="img_pokemon">
+    </section>
+
+    <!-- Resultados -->
+    <section class="conteudo-secundario">
+
+      <article>
+        <p class="conteudo-secundario-titulo">O Pokémon irá aparecer:</p>
+        <div class="conteudo-secundario-paragrafo">
+          <span class="conteudo-principal-escrito-botao" id="lblPokemon"></span>
+        </div>
+      </article>
+
+      <article>
+        <p class="conteudo-secundario-titulo">Temperatura:</p>
+        <div class="conteudo-secundario-paragrafo">
+          <span class="conteudo-principal-escrito-botao" id="lblTemperatura"></span>
+        </div>
+      </article>
+
+      <article>
+        <p class="conteudo-secundario-titulo">Está chovendo:</p>
+        <div class="conteudo-secundario-paragrafo">
+          <span class="conteudo-principal-escrito-botao" id="lblChuva"></span>
+        </div>
+      </article>
+
+      <article>
+        <p class="conteudo-secundario-titulo">Nome da cidade:</p>
+        <div class="conteudo-secundario-paragrafo">
+          <span class="conteudo-principal-escrito-botao" id="lblCidade"></span>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="rodape">
+    <img class="rodape-imagem"
+         src="{{ url_for('static', filename='assets/logo.png') }}"
+         alt="Logo Pokémon">
+  </footer>
+
+  <!-- JS -->
+  <script src="{{ url_for('static', filename='js/APIWeather.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/PokeAPI.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
