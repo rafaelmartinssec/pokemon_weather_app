@@ -1,0 +1,37 @@
+# Ambiente virtual
+.venv/
+venv/
+env/
+
+# Arquivos de configuração sensíveis
+.env
+*.env
+
+# Banco de dados local
+*.db
+*.sqlite3
+
+# Cache e arquivos temporários
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.tmp
+*.bak
+
+# Arquivos do VSCode e outros editores
+.vscode/
+.idea/
+*.swp
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Pasta de uploads ou imagens temporárias (se houver)
+uploads/
+static/uploads/
+
+# Pip e outras ferramentas
+pip-log.txt
